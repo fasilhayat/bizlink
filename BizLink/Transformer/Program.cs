@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Transform;
-using Transform.Entities;
+using Transformer;
+using Transformer.Entities;
 
 var config = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())

@@ -1,15 +1,15 @@
-﻿namespace Transform;
+﻿namespace Transformer;
 
 using System.Xml;
 using Entities;
 
 public class FolderMonitor
 {
-    private readonly string _sourceFolder;
-    private readonly string _targetFolder;
-    private readonly SchemaMapping[] _schemaXsltMappings;
+    private readonly string? _sourceFolder;
+    private readonly string? _targetFolder;
+    private readonly SchemaMapping[]? _schemaXsltMappings;
 
-    public FolderMonitor(string sourceFolder, string targetFolder, SchemaMapping[] schemaXsltMappings)
+    public FolderMonitor(string? sourceFolder, string targetFolder, SchemaMapping[] schemaXsltMappings)
     {
         this._sourceFolder = sourceFolder;
         this._targetFolder = targetFolder;

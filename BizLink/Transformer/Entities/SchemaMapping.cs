@@ -1,4 +1,4 @@
-﻿namespace Transform.Entities;
+﻿namespace Transformer.Entities;
 
 public class SchemaMapping
 {
