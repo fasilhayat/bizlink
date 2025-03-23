@@ -78,9 +78,9 @@ graph TD
     Transporter  -->|Transfers| Server[Server] 
     
     subgraph Microservices Layer 
-        Orchestrator[HAL C# Orchestrates flows]
-        Transformer[OPTIMUS C# Transforms messages using XSLT]
-        Transporter[BEAM atmoz/sftp Handles FTP file transfer]
+        Orchestrator[HAL Orchestrates flows]
+        Transformer[OPTIMUS Transforms messages XSLT/Automapper]
+        Transporter[BEAM atmoz/sftp Handles FTP transfers]
 
         Orchestrator -->|Mapping Requests| Transformer
         Orchestrator -->|Delegates| Transporter
