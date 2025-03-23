@@ -85,6 +85,4 @@ graph LR
         Orchestrator --> Transformer
         Orchestrator --> Transporter
     end
-
-
 ```
