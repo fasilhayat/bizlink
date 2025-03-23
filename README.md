@@ -71,18 +71,18 @@ If `atmoz/sftp` doesn't meet your needs, you can explore other SFTP server Docke
 By combining a Dockerized SFTP server with C# and libraries like SSH.NET, you can create a secure and programmable file transfer solution.
 
 ```mermaid
-graph LR
+graph TD
     Client[Client] -->|Sends HTTP/S Requests| NGINX[NGINX Reverse Proxy]
     NGINX -->|Routes requests| Orchestrator
-    NGINX -->|Routes requests| Transformer
-    Transformer -->|Routes requests| Transporter
-
-    subgraph Microservices Layer
+    Transformer -->|Delegates| Transporter
+    Transporter  -->|Transfers| Server[Server] 
+    
+    subgraph Microservices Layer 
         Orchestrator[HAL Orchestrator C# Orchestrates flows]
         Transformer[OPTIMUS Transformer C# Transforms messages using XSLT]
         Transporter[BEAM Transporter  atmoz/sftp Handles FTP file transfer]
 
-        Orchestrator --> Transformer
-        Orchestrator --> Transporter
+        Orchestrator -->|Mapping Requests| Transformer
+        Orchestrator -->|Delegates| Transporter
     end
 ```
