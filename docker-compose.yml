@@ -34,7 +34,7 @@ services:
 
   transporter:
     image: atmoz/sftp
-    container_name: beam
+    container_name: beamline
     ports:
       - "22:22"
     volumes:
