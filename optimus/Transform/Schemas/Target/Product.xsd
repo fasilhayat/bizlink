@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Define the Product element -->
+  <xs:element name="ProductInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ProductID" type="xs:int"/>
+        <xs:element name="Name" type="xs:string"/>
+        <xs:element name="Cost" type="xs:decimal"/>
+        <xs:element name="IsAvailable" type="xs:boolean"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

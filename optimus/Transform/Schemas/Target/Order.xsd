@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <!-- Define the Order element -->
+  <xs:element name="OrderDetails">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="OrderID" type="xs:int"/>
+        <xs:element name="OrderDate" type="xs:date"/>
+        <xs:element name="CustomerID" type="xs:int"/>
+        <xs:element name="TotalAmount" type="xs:decimal"/>
+        <xs:element name="ItemsList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Item" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="ProductID" type="xs:int"/>
+                    <xs:element name="Quantity" type="xs:int"/>
+                    <xs:element name="ItemPrice" type="xs:decimal"/>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

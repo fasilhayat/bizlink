@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Order>
+  <OrderID>2001</OrderID>
+  <OrderDate>2025-03-25</OrderDate>
+  <CustomerID>1</CustomerID>
+  <TotalAmount>1299.99</TotalAmount>
+  <Items>
+    <Item>
+      <ProductID>1001</ProductID>
+      <Quantity>1</Quantity>
+      <Price>599.99</Price>
+    </Item>
+    <Item>
+      <ProductID>1002</ProductID>
+      <Quantity>2</Quantity>
+      <Price>349.99</Price>
+    </Item>
+  </Items>
+</Order>

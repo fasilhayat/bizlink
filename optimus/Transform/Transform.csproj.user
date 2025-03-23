@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ActiveDebugProfile>Container (Dockerfile)</ActiveDebugProfile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Update="Schemas\Source\Order.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Schemas\Source\Customer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Schemas\Source\Product.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Schemas\Target\Customer.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Schemas\Target\Order.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="Schemas\Target\Product.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+</Project>

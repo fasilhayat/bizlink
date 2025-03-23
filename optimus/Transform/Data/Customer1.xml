@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Customer>
+  <CustomerID>1</CustomerID>
+  <Name>John Doe</Name>
+  <Email>johndoe@example.com</Email>
+  <DateOfBirth>1990-01-01</DateOfBirth>
+</Customer>
