@@ -75,9 +75,10 @@ graph TD
     Client[Client] -->|Sends HTTP/S Requests| NGINX[NGINX Reverse Proxy]
     NGINX -->|Routes requests| Orchestrator
     Transformer -->|Delegates| Transporter
-    Transporter  -->|Transfers| Server[Server] 
+    Transporter  -->|Transfers| Server[OUT Folder] 
+    IN[IN Folder] -->|Provides Input| Orchestrator
     
-    subgraph Microservices Layer 
+    subgraph Service Layer 
         Orchestrator[HAL Orchestrates flows]
         Transformer[OPTIMUS Transforms messages XSLT/Automapper]
         Transporter[BEAM atmoz/sftp Handles FTP transfers]
