@@ -19,5 +19,6 @@ var schemaXsltMappings = config.GetSection("SchemaXsltMappings")
 FolderMonitor monitor = new FolderMonitor(sourceFolder, targetFolder, schemaXsltMappings);
 monitor.StartMonitoring();
 
+// Stop program
 Console.WriteLine("Press any key to exit...");
 Console.ReadKey();
