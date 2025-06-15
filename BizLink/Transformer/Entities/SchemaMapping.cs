@@ -1,5 +1,6 @@
 ﻿namespace Transformer.Entities;
 
+///
 public class SchemaMapping
 {
     public string Schema { get; set; }
